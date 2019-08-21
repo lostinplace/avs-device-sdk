@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_SAMPLEAPP_INCLUDE_SAMPLEAPP_CONSOLEPRINTER_H_
 
 #include <mutex>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/Utils/Logger/Logger.h>
 #include <AVSCommon/Utils/Logger/LogStringFormatter.h>

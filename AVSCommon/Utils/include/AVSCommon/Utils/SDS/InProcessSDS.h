@@ -20,7 +20,8 @@
 #include <mutex>
 #include <atomic>
 #include <condition_variable>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "SharedDataStream.h"
 

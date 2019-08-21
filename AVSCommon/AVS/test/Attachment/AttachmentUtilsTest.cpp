@@ -51,7 +51,8 @@ void AttachmentUtilsTest::SetUp() {
  * Test read until end of buffer
  */
 TEST_F(AttachmentUtilsTest, test_readCompleteBuffer) {
-    char dstBuffer[sampleBuffer.length() + 10];
+    
+    char* dstBuffer = new char[sampleBuffer.length() + 10];
     memset(dstBuffer, 0, sampleBuffer.length() + 10);
 
     AttachmentReader::ReadStatus status;

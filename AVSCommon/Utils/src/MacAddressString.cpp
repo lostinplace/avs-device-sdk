@@ -16,7 +16,8 @@
 #include <AVSCommon/Utils/MacAddressString.h>
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <ctype.h>
 
 namespace alexaClientSDK {

@@ -19,7 +19,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_SDKINTERFACES_INCLUDE_AVSCOMMON_SDKINTERFACES_DIALOGUXSTATEOBSERVERINTERFACE_H_
 
 #include <ostream>
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace avsCommon {

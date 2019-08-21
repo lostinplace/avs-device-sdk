@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_CAPABILITYAGENTS_INTERACTIONMODEL_INCLUDE_INTERACTIONMODEL_INTERACTIONMODELCAPABILITYAGENT_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_set>
 
 #include <AVSCommon/AVS/CapabilityAgent.h>

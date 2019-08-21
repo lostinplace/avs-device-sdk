@@ -19,6 +19,7 @@
 #include <climits>
 #include <chrono>
 #include <functional>
+#include <stdint.h>
 #include <random>
 #include <vector>
 
@@ -35,7 +36,7 @@ namespace utils {
 std::string createRandomAlphabetString(int stringSize) {
     // First, let's efficiently generate random numbers of the appropriate size.
     std::vector<uint8_t> vec(stringSize);
-    std::independent_bits_engine<std::default_random_engine, CHAR_BIT, uint8_t> engine;
+    std::independent_bits_engine<std::default_random_engine, CHAR_BIT, unsigned long> engine;
     std::random_device rd;
     engine.seed(
         rd() + std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::steady_clock::now().time_since_epoch())

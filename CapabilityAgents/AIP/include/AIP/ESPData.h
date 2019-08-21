@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_CAPABILITYAGENTS_AIP_INCLUDE_AIP_ESPDATA_H_
 
 #include <ctype.h>
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace capabilityAgents {

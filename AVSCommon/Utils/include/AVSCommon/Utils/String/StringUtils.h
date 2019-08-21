@@ -16,7 +16,8 @@
 #ifndef ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_STRING_STRINGUTILS_H_
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_STRING_STRINGUTILS_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 namespace alexaClientSDK {

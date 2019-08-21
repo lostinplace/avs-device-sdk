@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_SDKINTERFACES_INCLUDE_AVSCOMMON_SDKINTERFACES_DIRECTIVESEQUENCERINTERFACE_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/AVS/AVSDirective.h"
 #include "AVSCommon/SDKInterfaces/DirectiveHandlerInterface.h"

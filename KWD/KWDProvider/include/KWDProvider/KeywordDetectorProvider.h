@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_KWD_KWDPROVIDER_INCLUDE_KWDPROVIDER_KEYWORDDETECTORPROVIDER_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_set>
 
 #include <AVSCommon/Utils/AudioFormat.h>

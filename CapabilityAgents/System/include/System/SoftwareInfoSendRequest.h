@@ -19,7 +19,8 @@
 #include <cstdint>
 #include <memory>
 #include <mutex>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/AVS/MessageRequest.h>
 #include <AVSCommon/SDKInterfaces/MessageRequestObserverInterface.h>

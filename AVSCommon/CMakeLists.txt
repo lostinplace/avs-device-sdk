@@ -86,12 +86,12 @@ target_include_directories(AVSCommon PUBLIC
     "${AVSCommon_SOURCE_DIR}/AVS/include"
     "${AVSCommon_SOURCE_DIR}/SDKInterfaces/include"
     "${AVSCommon_SOURCE_DIR}/Utils/include"
-    "${RAPIDJSON_INCLUDE_DIR}"
     "${MultipartParser_SOURCE_DIR}"
+    ${RAPIDJSON_INCLUDE_DIRS}
     ${CURL_INCLUDE_DIRS})
 
-target_link_libraries(AVSCommon
-    ${CURL_LIBRARIES})
+find_package(RapidJSON CONFIG REQUIRED)
+target_link_libraries(AVSCommon ${CURL_LIBRARIES})
 
 # install target
 LIST(APPEND PATHS "${PROJECT_SOURCE_DIR}/AVS/include")

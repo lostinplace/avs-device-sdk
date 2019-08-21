@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_CAPABILITYAGENTS_DONOTDISTURB_INCLUDE_DONOTDISTURBCA_DNDMESSAGEREQUEST_H_
 
 #include <future>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/AVS/MessageRequest.h>
 #include <AVSCommon/SDKInterfaces/MessageRequestObserverInterface.h>

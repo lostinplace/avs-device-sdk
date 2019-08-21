@@ -21,6 +21,8 @@
 #include <deque>
 #include <memory>
 #include <mutex>
+#include <sstream>
+#include <sstream>
 #include <string>
 
 #include <gmock/gmock.h>

@@ -25,7 +25,8 @@
 #include <rapidjson/writer.h>
 
 #include <limits>
-#include <string>
+#include <sstream>
+#include<string>
 #include <time.h>
 
 namespace alexaClientSDK {

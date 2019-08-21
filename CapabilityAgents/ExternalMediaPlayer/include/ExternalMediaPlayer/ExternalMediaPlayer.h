@@ -19,7 +19,8 @@
 #include <map>
 #include <memory>
 #include <mutex>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/AVS/CapabilityAgent.h>
 #include <AVSCommon/AVS/DirectiveHandlerConfiguration.h>

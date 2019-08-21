@@ -19,7 +19,8 @@
 #include <chrono>
 #include <future>
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/AVS/Attachment/InProcessAttachment.h>
 

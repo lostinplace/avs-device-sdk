@@ -18,7 +18,8 @@
 
 #include <atomic>
 #include <unordered_map>
-#include <string>
+#include <sstream>
+#include<string>
 #include <memory>
 
 #include "AVSCommon/AVS/NamespaceAndName.h"

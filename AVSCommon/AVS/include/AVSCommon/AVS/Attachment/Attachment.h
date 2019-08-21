@@ -18,7 +18,9 @@
 
 #include <atomic>
 #include <mutex>
-#include <string>
+#include <sstream>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/AVS/Attachment/AttachmentReader.h"
 #include "AVSCommon/AVS/Attachment/AttachmentWriter.h"

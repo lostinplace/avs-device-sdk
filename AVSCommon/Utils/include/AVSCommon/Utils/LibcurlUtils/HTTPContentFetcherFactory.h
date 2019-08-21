@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_LIBCURLUTILS_HTTPCONTENTFETCHERFACTORY_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/SDKInterfaces/HTTPContentFetcherInterface.h>
 #include <AVSCommon/SDKInterfaces/HTTPContentFetcherInterfaceFactoryInterface.h>

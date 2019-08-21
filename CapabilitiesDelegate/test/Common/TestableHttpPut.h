@@ -16,7 +16,8 @@
 #ifndef ALEXA_CLIENT_SDK_CAPABILITIESDELEGATE_TEST_COMMON_TESTABLEHTTPPUT_H_
 #define ALEXA_CLIENT_SDK_CAPABILITIESDELEGATE_TEST_COMMON_TESTABLEHTTPPUT_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include <AVSCommon/Utils/LibcurlUtils/HttpPutInterface.h>

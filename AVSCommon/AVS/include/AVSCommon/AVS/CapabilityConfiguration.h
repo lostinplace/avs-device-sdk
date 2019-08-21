@@ -16,7 +16,8 @@
 #ifndef ALEXA_CLIENT_SDK_AVSCOMMON_AVS_INCLUDE_AVSCOMMON_AVS_CAPABILITYCONFIGURATION_H_
 #define ALEXA_CLIENT_SDK_AVSCOMMON_AVS_INCLUDE_AVSCOMMON_AVS_CAPABILITYCONFIGURATION_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_map>
 
 namespace alexaClientSDK {

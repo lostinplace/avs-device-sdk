@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_PLAYLISTPARSER_ITERATIVEPLAYLISTPARSERINTERFACE_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include "PlaylistParserObserverInterface.h"

@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_SETTINGS_INCLUDE_SETTINGS_SETTINGEVENTSENDERINTERFACE_H_
 
 #include <future>
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace settings {

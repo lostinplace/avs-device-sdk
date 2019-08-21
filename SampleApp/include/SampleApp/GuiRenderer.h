@@ -18,7 +18,8 @@
 
 #include <AVSCommon/SDKInterfaces/TemplateRuntimeObserverInterface.h>
 #include <map>
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace sampleApp {

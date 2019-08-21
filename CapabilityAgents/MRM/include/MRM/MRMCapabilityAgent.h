@@ -16,7 +16,8 @@
 #define ALEXA_CLIENT_SDK_CAPABILITYAGENTS_MRM_INCLUDE_MRM_MRMCAPABILITYAGENT_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/AVS/CapabilityAgent.h>
 #include <AVSCommon/SDKInterfaces/CallStateObserverInterface.h>

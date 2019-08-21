@@ -17,7 +17,9 @@
 #define ALEXA_CLIENT_SDK_ACL_TEST_TRANSPORT_MOCKHTTP2REQUEST_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include <sstream>
+#include<string>
 
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>

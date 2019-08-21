@@ -22,7 +22,8 @@
 #include <AVSCommon/AVS/FocusState.h>
 
 #include <set>
-#include <string>
+#include <sstream>
+#include<string>
 #include <list>
 
 namespace alexaClientSDK {

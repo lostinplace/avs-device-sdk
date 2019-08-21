@@ -17,7 +17,9 @@
 #define ALEXA_CLIENT_SDK_ACL_INCLUDE_ACL_TRANSPORT_TRANSPORTFACTORYINTERFACE_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/SDKInterfaces/AuthDelegateInterface.h>
 #include <AVSCommon/AVS/Attachment/AttachmentManager.h>

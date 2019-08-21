@@ -19,7 +19,8 @@
 #include <cstdint>
 #include <future>
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <ACL/AVSConnectionManager.h>
 #include <AVSCommon/AVS/CapabilityAgent.h>
 #include <AVSCommon/SDKInterfaces/AVSConnectionManagerInterface.h>

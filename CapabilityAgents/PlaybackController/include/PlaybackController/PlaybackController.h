@@ -18,7 +18,8 @@
 
 #include <memory>
 #include <queue>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/AVS/CapabilityConfiguration.h>
 #include <AVSCommon/AVS/MessageRequest.h>

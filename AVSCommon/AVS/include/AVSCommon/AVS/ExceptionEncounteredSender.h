@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_AVS_INCLUDE_AVSCOMMON_AVS_EXCEPTIONENCOUNTEREDSENDER_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <AVSCommon/AVS/ExceptionErrorType.h>
 #include <AVSCommon/SDKInterfaces/MessageSenderInterface.h>
 #include <AVSCommon/SDKInterfaces/ExceptionEncounteredSenderInterface.h>

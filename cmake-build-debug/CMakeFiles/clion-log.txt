@@ -1,0 +1,41 @@
+"C:\Program Files\JetBrains\CLion 2019.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\msys64\home\Chris\avs\avs-device-sdk
+-- The CXX compiler identification is MSVC 19.22.27905.0
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.22.27905/bin/Hostx86/x86/cl.exe
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.22.27905/bin/Hostx86/x86/cl.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+###############################################################################
+#                                                                             #
+# ERROR:                                                                      #
+# AlexaClientSDK must not be built in the AlexaClientSDK source directory.    #
+#                                                                             #
+# You must run cmake in a separate build directory completely outside the     #
+# the source directory.                                                       #
+#                                                                             #
+# Source Directory:                                                           #
+#     C:/msys64/home/Chris/avs/avs-device-sdk                                 #
+# Build Directory:                                                            #
+#     C:/msys64/home/Chris/avs/avs-device-sdk/cmake-build-debug               #
+#                                                                             #
+# NOTE:                                                                       #
+# Since you have tried to create an in-source build already, CMake may have   #
+# created some files and directories in the source tree. To find these files, #
+# run:                                                                        #
+#     $ git status                                                            #
+#                                                                             #
+# To remove these files, simply use 'rm' on the appropriate files and         #
+# directories.                                                                #
+#                                                                             #
+###############################################################################
+CMake Error at build/cmake/DisallowOutOfSourceBuilds.cmake:59 (message):
+  In-source-build detected, quitting!
+Call Stack (most recent call first):
+  build/cmake/DisallowOutOfSourceBuilds.cmake:63 (DisallowOutOfSourceBuilds)
+  build/BuildDefaults.cmake:7 (include)
+  CMakeLists.txt:12 (include)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/msys64/home/Chris/avs/avs-device-sdk/cmake-build-debug/CMakeFiles/CMakeOutput.log".

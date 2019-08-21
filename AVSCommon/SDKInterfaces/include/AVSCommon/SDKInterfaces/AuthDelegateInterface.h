@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_SDKINTERFACES_INCLUDE_AVSCOMMON_SDKINTERFACES_AUTHDELEGATEINTERFACE_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/SDKInterfaces/AuthObserverInterface.h>
 

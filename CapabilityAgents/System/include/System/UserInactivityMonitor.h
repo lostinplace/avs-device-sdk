@@ -19,7 +19,8 @@
 #include <atomic>
 #include <chrono>
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/AVS/CapabilityAgent.h>
 #include <AVSCommon/Utils/Timing/Timer.h>

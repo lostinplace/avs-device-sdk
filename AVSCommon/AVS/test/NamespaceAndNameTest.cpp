@@ -13,7 +13,8 @@
  * permissions and limitations under the License.
  */
 
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_map>
 
 #include <gtest/gtest.h>

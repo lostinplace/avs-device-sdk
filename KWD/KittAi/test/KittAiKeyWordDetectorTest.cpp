@@ -17,7 +17,8 @@
 #include <fstream>
 #include <iostream>
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <thread>
 
 #include <gtest/gtest.h>

@@ -20,7 +20,8 @@
 #include <chrono>
 #include <cstdint>
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "HTTP2RequestType.h"
 #include "HTTP2RequestSourceInterface.h"

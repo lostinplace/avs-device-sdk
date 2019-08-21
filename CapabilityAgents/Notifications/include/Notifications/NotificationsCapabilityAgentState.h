@@ -21,7 +21,8 @@ namespace capabilityAgents {
 namespace notifications {
 
 #include <ostream>
-#include <string>
+#include <sstream>
+#include<string>
 
 enum class NotificationsCapabilityAgentState {
     // The capability agent is awaiting directives.

@@ -22,7 +22,8 @@
 #include <mutex>
 #include <thread>
 #include <iostream>
-#include <string>
+#include <sstream>
+#include<string>
 #include <future>
 
 #include <AVSCommon/Utils/MediaPlayer/MediaPlayerInterface.h>

@@ -17,7 +17,9 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_AVS_INCLUDE_AVSCOMMON_AVS_ATTACHMENT_ATTACHMENTMANAGERINTERFACE_H_
 
 #include <chrono>
-#include <string>
+#include <sstream>
+#include <sstream>
+#include<string>
 #include <memory>
 
 #include "AVSCommon/AVS/Attachment/Attachment.h"

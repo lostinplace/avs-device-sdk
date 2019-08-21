@@ -41,7 +41,8 @@
 
 #include <chrono>
 #include <set>
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_set>
 
 namespace alexaClientSDK {

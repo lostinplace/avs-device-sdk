@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_BLUETOOTHIMPLEMENTATIONS_BLUEZ_INCLUDE_BLUEZ_DBUSOBJECT_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_map>
 
 #include "BlueZ/DBusObjectBase.h"

@@ -18,7 +18,8 @@
 
 #include <cstddef>
 #include <cstdint>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include "AVSCommon/Utils/HTTP2/HTTP2SendDataResult.h"

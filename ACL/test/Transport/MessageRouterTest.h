@@ -19,7 +19,8 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include <sstream>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/Utils/Threading/Executor.h"
 #include "AVSCommon/Utils/Memory/Memory.h"

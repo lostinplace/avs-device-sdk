@@ -12,7 +12,8 @@
  * express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
-#include <string>
+#include <sstream>
+#include<string>
 
 extern "C" {
 #include <libavformat/avformat.h>

@@ -2,7 +2,8 @@
 #define _MULTIPART_PARSER_H_
 
 #include <sys/types.h>
-#include <string>
+#include <sstream>
+#include<string>
 #include <stdexcept>
 #include <cstring>
 #include <vector>

@@ -14,7 +14,8 @@
  */
 
 #include <ctime>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <gtest/gtest.h>
 

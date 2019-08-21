@@ -19,7 +19,8 @@
 #include <future>
 #include <memory>
 #include <ostream>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include <AVSCommon/SDKInterfaces/Bluetooth/Services/A2DPSourceInterface.h>

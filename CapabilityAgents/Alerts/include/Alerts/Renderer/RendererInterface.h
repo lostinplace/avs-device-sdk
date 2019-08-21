@@ -21,7 +21,8 @@
 #include <chrono>
 #include <functional>
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 namespace alexaClientSDK {

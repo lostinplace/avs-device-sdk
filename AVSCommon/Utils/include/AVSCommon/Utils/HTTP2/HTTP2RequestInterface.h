@@ -16,7 +16,8 @@
 #ifndef ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_HTTP2_HTTP2REQUESTINTERFACE_H_
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_HTTP2_HTTP2REQUESTINTERFACE_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/Utils/HTTP2/HTTP2RequestSourceInterface.h"
 #include "AVSCommon/Utils/HTTP2/HTTP2ResponseSinkInterface.h"

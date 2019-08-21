@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_LOGGER_LOGENTRY_H_
 
 #include <sstream>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/Utils/Logger/LogEntryStream.h"
 

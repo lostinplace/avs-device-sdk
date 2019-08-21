@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_KWD_SENSORY_INCLUDE_SENSORY_SENSORYKEYWORDDETECTOR_H_
 
 #include <atomic>
-#include <string>
+#include <sstream>
+#include<string>
 #include <thread>
 #include <unordered_set>
 

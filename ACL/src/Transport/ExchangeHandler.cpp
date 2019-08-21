@@ -13,7 +13,9 @@
  * permissions and limitations under the License.
  */
 
-#include <string>
+#include <sstream>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/Utils/Logger/Logger.h>
 

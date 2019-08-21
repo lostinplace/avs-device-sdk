@@ -18,7 +18,9 @@
 
 #include <iostream>
 #include <memory>
-#include <string>
+#include <sstream>
+#include <sstream>
+#include<string>
 #include <utility>
 
 #include "Attachment/AttachmentManagerInterface.h"

@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_HTTP_HTTPRESPONSECODE_H_
 
 #include <iostream>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/Utils/Logger/LoggerUtils.h"
 

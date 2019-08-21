@@ -15,7 +15,8 @@
 #ifndef ALEXA_CLIENT_SDK_ESP_INCLUDE_ESP_ESPDATAMODIFIERINTERFACE_H_
 #define ALEXA_CLIENT_SDK_ESP_INCLUDE_ESP_ESPDATAMODIFIERINTERFACE_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AIP/ESPData.h>
 

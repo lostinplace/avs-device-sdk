@@ -16,7 +16,8 @@
 #ifndef ALEXA_CLIENT_SDK_AVSCOMMON_AVS_INCLUDE_AVSCOMMON_AVS_EVENTBUILDER_H_
 #define ALEXA_CLIENT_SDK_AVSCOMMON_AVS_INCLUDE_AVSCOMMON_AVS_EVENTBUILDER_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 #include <utility>
 
 namespace alexaClientSDK {

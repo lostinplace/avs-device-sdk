@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_STREAM_STREAMBUF_H_
 
 #include <sstream>
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace avsCommon {

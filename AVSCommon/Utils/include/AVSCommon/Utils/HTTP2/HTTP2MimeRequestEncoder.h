@@ -18,7 +18,8 @@
 
 #include <memory>
 #include <ostream>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include "AVSCommon/Utils/HTTP2/HTTP2MimeRequestSourceInterface.h"

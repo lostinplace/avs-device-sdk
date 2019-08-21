@@ -16,7 +16,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_JSON_JSONGENERATOR_H_
 
 #include <cstdint>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <rapidjson/stringbuffer.h>
 #include <rapidjson/writer.h>

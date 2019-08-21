@@ -16,7 +16,8 @@
 #include "AVSCommon/Utils/Stream/StreamFunctions.h"
 
 #include <sstream>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/Utils/Stream/Streambuf.h"
 

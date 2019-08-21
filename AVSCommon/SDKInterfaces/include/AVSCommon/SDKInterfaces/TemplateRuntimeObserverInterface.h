@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_SDKINTERFACES_INCLUDE_AVSCOMMON_SDKINTERFACES_TEMPLATERUNTIMEOBSERVERINTERFACE_H_
 
 #include <chrono>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/AVS/FocusState.h"
 #include <AVSCommon/AVS/PlayerActivity.h>

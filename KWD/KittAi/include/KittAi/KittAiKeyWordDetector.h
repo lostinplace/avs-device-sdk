@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_KWD_KITTAI_INCLUDE_KITTAI_KITTAIKEYWORDDETECTOR_H_
 
 #include <atomic>
-#include <string>
+#include <sstream>
+#include<string>
 #include <thread>
 #include <unordered_map>
 #include <unordered_set>

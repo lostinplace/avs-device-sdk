@@ -15,7 +15,8 @@
 #ifndef ALEXA_CLIENT_SDK_PLAYLISTPARSER_TEST_PLAYLISTPARSER_MOCKCONTENTFETCHER_H_
 #define ALEXA_CLIENT_SDK_PLAYLISTPARSER_TEST_PLAYLISTPARSER_MOCKCONTENTFETCHER_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 #include <unordered_map>
 

@@ -16,7 +16,8 @@
 #include <iterator>
 #include <memory>
 #include <sstream>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>

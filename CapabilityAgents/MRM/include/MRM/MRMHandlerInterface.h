@@ -18,7 +18,8 @@
 
 #include <memory>
 #include <mutex>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/AVS/AVSDirective.h>
 #include <AVSCommon/SDKInterfaces/SpeakerInterface.h>

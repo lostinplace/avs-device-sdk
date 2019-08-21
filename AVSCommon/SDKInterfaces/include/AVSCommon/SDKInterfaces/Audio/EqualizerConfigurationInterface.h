@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_SDKINTERFACES_INCLUDE_AVSCOMMON_SDKINTERFACES_AUDIO_EQUALIZERCONFIGURATIONINTERFACE_H_
 
 #include <set>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/Utils/Error/SuccessResult.h>
 #include <AVSCommon/Utils/functional/hash.h>

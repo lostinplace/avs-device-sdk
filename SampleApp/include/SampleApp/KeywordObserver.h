@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_SAMPLEAPP_INCLUDE_SAMPLEAPP_KEYWORDOBSERVER_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/AVS/AudioInputStream.h>
 #include <AVSCommon/SDKInterfaces/KeyWordObserverInterface.h>

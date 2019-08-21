@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_INTEGRATION_INCLUDE_INTEGRATION_TESTDIRECTIVEHANDLER_H_
 
 #include <condition_variable>
-#include <string>
+#include <sstream>
+#include<string>
 #include <future>
 #include <fstream>
 #include <chrono>

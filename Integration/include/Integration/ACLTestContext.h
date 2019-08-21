@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_INTEGRATION_INCLUDE_INTEGRATION_ACLTESTCONTEXT_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <ACL/Transport/MessageRouter.h>
 #include <AVSCommon/AVS/Attachment/AttachmentManager.h>

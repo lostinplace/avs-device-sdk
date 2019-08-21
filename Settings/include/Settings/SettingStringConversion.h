@@ -16,6 +16,7 @@
 #define ALEXA_CLIENT_SDK_SETTINGS_INCLUDE_SETTINGS_SETTINGSTRINGCONVERSION_H_
 
 #include <sstream>
+#include <sstream>
 #include <string>
 #include <utility>
 
@@ -44,7 +45,7 @@ static constexpr bool isIntegralByteType() {
  * @tparam ValueT The value type. This will only be a valid type for int8_t or uint8_t.
  */
 template <typename ValueT>
-using IntegralByteType = typename std::enable_if<isIntegralByteType<ValueT>(), ValueT>::type;
+using IntegralByteType = typename std::enable_if<std::is_same<ValueT, int8_t>::value || std::is_same<ValueT, uint8_t>::value, ValueT>::type;
 
 /**
  * Convert a setting that is either a int8_t or uint8_t to a string (json format) representation.
@@ -93,13 +94,15 @@ static constexpr bool isEnumOrString() {
     return std::is_enum<ValueT>::value || std::is_same<ValueT, std::string>::value;
 }
 
+
+
 /**
  * Define a valid type for enums and string types.
  *
  * @tparam ValueT The value type. This will only be a valid type for enums and string.
  */
 template <typename ValueT>
-using EnumOrString = typename std::enable_if<isEnumOrString<ValueT>(), ValueT>::type;
+using EnumOrString = typename std::enable_if<std::is_enum<ValueT>::value || std::is_same<ValueT, std::string>::value, ValueT>::type;
 
 /**
  * Convert a setting that is either a enum or string to a json format string representation.
@@ -150,7 +153,8 @@ std::pair<bool, ValueT> fromSettingString(const std::string& str, const EnumOrSt
  * @tparam ValueT The value type. This will only be a valid type for arithmetic types (except (u)int8_t), and classes.
  */
 template <typename ValueT>
-using OtherTypes = typename std::enable_if<!isEnumOrString<ValueT>() && !isIntegralByteType<ValueT>(), ValueT>::type;
+using OtherTypes = typename std::enable_if<!(std::is_enum<ValueT>::value || std::is_same<ValueT, std::string>::value) &&
+  !(std::is_same<ValueT, int8_t>::value || std::is_same<ValueT, uint8_t>::value), ValueT>::type;
 
 /**
  * Convert a setting that is either arithmetic types (except (u)int8_t), and classes to a json format representation.

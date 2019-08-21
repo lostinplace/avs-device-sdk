@@ -16,7 +16,8 @@
 #ifndef ALEXA_CLIENT_SDK_AVSCOMMON_AVS_INCLUDE_AVSCOMMON_AVS_AVSMESSAGEHEADER_H_
 #define ALEXA_CLIENT_SDK_AVSCOMMON_AVS_INCLUDE_AVSCOMMON_AVS_AVSMESSAGEHEADER_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace avsCommon {

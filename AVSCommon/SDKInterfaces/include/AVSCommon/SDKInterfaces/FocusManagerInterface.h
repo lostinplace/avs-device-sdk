@@ -18,7 +18,8 @@
 
 #include <future>
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "ChannelObserverInterface.h"
 #include "FocusManagerObserverInterface.h"

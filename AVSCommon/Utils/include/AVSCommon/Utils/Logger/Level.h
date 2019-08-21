@@ -16,7 +16,8 @@
 #ifndef ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_LOGGER_LEVEL_H_
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_LOGGER_LEVEL_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace avsCommon {

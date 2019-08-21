@@ -3,7 +3,6 @@ if(POLICY CMP0057)
 endif()
 
 include(CTest)
-include(ThirdParty/googletest.cmake)
 
 add_custom_target(unit COMMAND ${CMAKE_CTEST_COMMAND})
 
@@ -21,15 +20,21 @@ macro(discover_unit_tests includes libraries)
             list(GET extra_macro_args 0 inputs)
         endif()
         file(GLOB_RECURSE tests RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/*Test.cpp")
+        enable_testing()
+        find_package(GTest MODULE REQUIRED)
+    
+    add_test(AllTestsInMain main)
         foreach(testsourcefile IN LISTS tests)
             get_filename_component(testname ${testsourcefile} NAME_WE)
             add_executable(${testname} ${testsourcefile})
             add_dependencies(unit ${testname})
             target_include_directories(${testname} PRIVATE ${includes})
+            
             # Do not include gtest_main due to double free issue
             # - https://github.com/google/googletest/issues/930
-            target_link_libraries(${testname} ${libraries} gmock_main)
+            target_link_libraries(${testname} PRIVATE GTest::GTest GTest::Main)
             configure_test_command(${testname} "${inputs}" ${testsourcefile})
+            add_test(AllTestsInMain main)
         endforeach()
     endif()
 endmacro()

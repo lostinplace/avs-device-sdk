@@ -19,7 +19,8 @@
 #include <cstddef>
 #include <cstdint>
 #include <map>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/Utils/HTTP2/HTTP2ResponseSinkInterface.h"
 #include "AVSCommon/Utils/HTTP2/HTTP2ReceiveDataStatus.h"

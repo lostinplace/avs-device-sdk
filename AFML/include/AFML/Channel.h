@@ -18,7 +18,9 @@
 
 #include <chrono>
 #include <memory>
-#include <string>
+#include <sstream>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/SDKInterfaces/ChannelObserverInterface.h>
 #include <AVSCommon/AVS/FocusState.h>

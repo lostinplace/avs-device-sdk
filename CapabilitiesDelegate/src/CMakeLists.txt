@@ -7,9 +7,10 @@ add_library(CapabilitiesDelegate SHARED
     CapabilitiesDelegate.cpp)
 target_include_directories(CapabilitiesDelegate PUBLIC
     ${CapabilitiesDelegate_SOURCE_DIR}/include)
-target_include_directories(CapabilitiesDelegate PRIVATE
-    ${RAPIDJSON_INCLUDE_DIR})
-target_link_libraries(CapabilitiesDelegate AVSCommon ACL RegistrationManager ${CURL_LIBRARIES})
+target_include_directories(CapabilitiesDelegate PRIVATE)
+find_package(rapidjson REQUIRED)
+find_package(curl REQUIRED)
+target_link_libraries(CapabilitiesDelegate AVSCommon ACL RegistrationManager curl rapidjson)
 
 # install target
 asdk_install()

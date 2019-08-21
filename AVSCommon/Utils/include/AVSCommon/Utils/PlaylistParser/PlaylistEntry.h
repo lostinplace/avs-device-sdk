@@ -19,7 +19,8 @@
 #include <chrono>
 #include <ostream>
 #include <queue>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/SDKInterfaces/HTTPContentFetcherInterface.h>
 #include <AVSCommon/Utils/HTTPContent.h>

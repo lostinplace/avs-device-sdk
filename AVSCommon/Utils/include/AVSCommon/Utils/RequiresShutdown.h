@@ -19,7 +19,8 @@
 #include <atomic>
 #include <memory>
 #include <mutex>
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace avsCommon {

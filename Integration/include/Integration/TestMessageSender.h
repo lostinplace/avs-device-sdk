@@ -16,7 +16,8 @@
 #ifndef ALEXA_CLIENT_SDK_INTEGRATION_INCLUDE_INTEGRATION_TESTMESSAGESENDER_H_
 #define ALEXA_CLIENT_SDK_INTEGRATION_INCLUDE_INTEGRATION_TESTMESSAGESENDER_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 #include <chrono>
 #include <deque>
 #include <mutex>

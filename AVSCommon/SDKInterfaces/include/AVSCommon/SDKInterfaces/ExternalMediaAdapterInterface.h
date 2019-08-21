@@ -20,7 +20,8 @@
 
 #include <chrono>
 #include <set>
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace avsCommon {

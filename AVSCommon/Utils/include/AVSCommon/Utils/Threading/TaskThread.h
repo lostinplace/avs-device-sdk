@@ -18,7 +18,8 @@
 
 #include <atomic>
 #include <functional>
-#include <string>
+#include <sstream>
+#include<string>
 #include <thread>
 
 namespace alexaClientSDK {

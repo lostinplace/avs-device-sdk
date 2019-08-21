@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_LOGGER_THREADMONIKER_H_
 
 #include <iomanip>
-#include <string>
+#include <sstream>
+#include<string>
 #include <sstream>
 #include <thread>
 

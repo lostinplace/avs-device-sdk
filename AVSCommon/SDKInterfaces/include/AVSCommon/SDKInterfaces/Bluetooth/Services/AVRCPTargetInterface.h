@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_SDKINTERFACES_INCLUDE_AVSCOMMON_SDKINTERFACES_BLUETOOTH_SERVICES_AVRCPTARGETINTERFACE_H_
 
 #include <ostream>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/SDKInterfaces/Bluetooth/Services/BluetoothServiceInterface.h"
 

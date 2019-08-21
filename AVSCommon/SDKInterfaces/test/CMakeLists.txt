@@ -3,9 +3,12 @@ add_library(SDKInterfacesTests
         src/StubMiscStorage.cpp
         )
 
-target_include_directories(SDKInterfacesTests PUBLIC
-        "${AVSCommon_INCLUDE_DIRS}"
-        )
+enable_testing()
+find_package(GTest MODULE REQUIRED)
 
-target_link_libraries(SDKInterfacesTests AVSCommon gmock_main)
+target_include_directories(SDKInterfacesTests PUBLIC ${AVSCommon_INCLUDE_DIRS})
+
+target_link_libraries(SDKInterfacesTests ${AVSCommon_LIBRARIES})
+target_link_libraries(SDKInterfacesTests PRIVATE GTest::GTest GTest::Main)
+add_test(AllTestsInMain main)
 

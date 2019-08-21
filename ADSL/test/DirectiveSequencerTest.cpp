@@ -17,7 +17,9 @@
 
 #include <chrono>
 #include <future>
-#include <string>
+#include <sstream>
+#include <sstream>
+#include<string>
 #include <memory>
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>

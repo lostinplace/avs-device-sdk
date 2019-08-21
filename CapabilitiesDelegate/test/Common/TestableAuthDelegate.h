@@ -16,7 +16,8 @@
 #ifndef ALEXA_CLIENT_SDK_CAPABILITIESDELEGATE_TEST_COMMON_TESTABLEAUTHDELEGATE_H_
 #define ALEXA_CLIENT_SDK_CAPABILITIESDELEGATE_TEST_COMMON_TESTABLEAUTHDELEGATE_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_set>
 
 #include <AVSCommon/SDKInterfaces/AuthDelegateInterface.h>

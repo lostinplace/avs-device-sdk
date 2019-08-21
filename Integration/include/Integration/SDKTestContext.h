@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_INTEGRATION_INCLUDE_INTEGRATION_SDKTESTCONTEXT_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace integration {

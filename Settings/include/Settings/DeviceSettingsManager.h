@@ -15,7 +15,8 @@
 #ifndef ALEXA_CLIENT_SDK_SETTINGS_INCLUDE_SETTINGS_DEVICESETTINGSMANAGER_H_
 #define ALEXA_CLIENT_SDK_SETTINGS_INCLUDE_SETTINGS_DEVICESETTINGSMANAGER_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "Settings/SettingInterface.h"
 #include "Settings/SettingsManager.h"

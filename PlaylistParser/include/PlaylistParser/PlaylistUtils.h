@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_PLAYLISTPARSER_INCLUDE_PLAYLISTPARSER_PLAYLISTUTILS_H_
 
 #include <chrono>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include <AVSCommon/SDKInterfaces/HTTPContentFetcherInterface.h>

@@ -18,7 +18,8 @@
 
 #include <atomic>
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include <AVSCommon/AVS/Attachment/AttachmentWriter.h>

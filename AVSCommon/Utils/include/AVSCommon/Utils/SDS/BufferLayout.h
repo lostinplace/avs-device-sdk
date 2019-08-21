@@ -19,7 +19,8 @@
 #include <cstdint>
 #include <cstddef>
 #include <mutex>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include "AVSCommon/Utils/Logger/LoggerUtils.h"

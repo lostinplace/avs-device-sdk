@@ -15,7 +15,8 @@
 
 #include <cstring>
 #include <iostream>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 #include "AVSCommon/Utils/HTTP2/MockHTTP2MimeRequestEncodeSource.h"
 #include "AVSCommon/Utils/Common/Common.h"

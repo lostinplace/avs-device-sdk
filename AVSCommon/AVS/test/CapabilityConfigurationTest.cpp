@@ -15,7 +15,8 @@
 
 #include <AVSCommon/AVS/CapabilityConfiguration.h>
 
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_map>
 
 #include <gtest/gtest.h>

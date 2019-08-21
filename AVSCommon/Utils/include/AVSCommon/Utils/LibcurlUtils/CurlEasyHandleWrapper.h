@@ -18,7 +18,8 @@
 
 #include <chrono>
 #include <curl/curl.h>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/Utils/Logger/LogEntry.h>
 #include <AVSCommon/Utils/Logger/LoggerUtils.h>

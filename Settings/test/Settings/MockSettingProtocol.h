@@ -16,7 +16,8 @@
 #define ALEXA_CLIENT_SDK_SETTINGS_TEST_SETTINGS_MOCKSETTINGPROTOCOL_H_
 
 #include <functional>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <gmock/gmock.h>
 

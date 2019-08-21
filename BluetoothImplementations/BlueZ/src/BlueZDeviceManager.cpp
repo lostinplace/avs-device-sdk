@@ -15,7 +15,8 @@
 
 #include <algorithm>
 #include <cstring>
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_map>
 
 #include <AVSCommon/Utils/Bluetooth/BluetoothEvents.h>

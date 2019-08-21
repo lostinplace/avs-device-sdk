@@ -18,7 +18,8 @@
 #include <map>
 #include <memory>
 #include <ratio>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <SLES/OpenSLES.h>
 #include <SLES/OpenSLES_Android.h>

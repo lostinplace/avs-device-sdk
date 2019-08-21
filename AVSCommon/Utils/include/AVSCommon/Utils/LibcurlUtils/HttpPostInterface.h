@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_LIBCURLUTILS_HTTPPOSTINTERFACE_H_
 
 #include <chrono>
-#include <string>
+#include <sstream>
+#include<string>
 #include <utility>
 #include <vector>
 

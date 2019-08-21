@@ -20,7 +20,8 @@ namespace alexaClientSDK {
 namespace capabilityAgents {
 namespace aip {
 
-#include <string>
+#include <sstream>
+#include<string>
 
 /**
  * Enumerates the different initiators supported by AVS.

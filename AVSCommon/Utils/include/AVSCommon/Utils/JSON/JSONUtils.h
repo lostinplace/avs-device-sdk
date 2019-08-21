@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_UTILS_INCLUDE_AVSCOMMON_UTILS_JSON_JSONUTILS_H_
 
 #include <cstdint>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <rapidjson/document.h>
 

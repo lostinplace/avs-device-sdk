@@ -16,7 +16,8 @@
 #include "BlueZ/PairingAgent.h"
 
 #include <iostream>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/Utils/Logger/Logger.h>
 #include <BlueZ/BlueZConstants.h>

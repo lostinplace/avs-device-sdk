@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_SAMPLEAPP_AUTHORIZATION_CBLAUTHDELEGATE_INCLUDE_CBLAUTHDELEGATE_SQLITECBLAUTHDELEGATESTORAGE_H_
 
 #include <mutex>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <sqlite3.h>
 

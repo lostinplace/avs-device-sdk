@@ -18,7 +18,8 @@
 
 #include <atomic>
 #include <future>
-#include <string>
+#include <sstream>
+#include<string>
 #include <thread>
 
 #include <AVSCommon/SDKInterfaces/HTTPContentFetcherInterface.h>

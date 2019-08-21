@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_CAPABILITYAGENTS_DONOTDISTURB_INCLUDE_DONOTDISTURBCA_DNDSETTINGPROTOCOL_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <utility>
 
 #include <AVSCommon/Utils/Threading/Executor.h>

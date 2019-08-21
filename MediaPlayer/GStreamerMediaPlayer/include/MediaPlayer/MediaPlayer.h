@@ -23,7 +23,8 @@
 #include <future>
 #include <memory>
 #include <queue>
-#include <string>
+#include <sstream>
+#include<string>
 #include <thread>
 
 #include <gst/gst.h>

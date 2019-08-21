@@ -14,7 +14,8 @@
  */
 
 #include <chrono>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <gtest/gtest.h>
 #include <rapidjson/document.h>

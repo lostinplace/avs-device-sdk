@@ -18,7 +18,8 @@
 #include "SampleApp/SampleApplicationReturnCodes.h"
 
 #include <cstdlib>
-#include <string>
+#include <sstream>
+#include<string>
 
 using namespace alexaClientSDK::sampleApp;
 

@@ -18,7 +18,8 @@
 
 #include <list>
 #include <sqlite3.h>
-#include <string>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace storage {

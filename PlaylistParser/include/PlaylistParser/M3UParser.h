@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_PLAYLISTPARSER_INCLUDE_PLAYLISTPARSER_M3UPARSER_H_
 
 #include <chrono>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include <AVSCommon/Utils/PlaylistParser/PlaylistParserObserverInterface.h>

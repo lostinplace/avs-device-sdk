@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_STORAGE_SQLITESTORAGE_INCLUDE_SQLITESTORAGE_SQLITEDATABASE_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include <sqlite3.h>

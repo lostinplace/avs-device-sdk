@@ -18,7 +18,8 @@
 
 #include <chrono>
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/Utils/Configuration/ConfigurationNode.h>
 

@@ -20,6 +20,7 @@
 #include <mutex>
 #include <climits>
 #include <algorithm>
+#include <stdint.h>
 #include <functional>
 
 #include "AVSCommon/Utils/Logger/Logger.h"
@@ -68,7 +69,7 @@ static const size_t BITS_IN_HEX_DIGIT = 4;
  * @return A hex string of length @c numDigits.
  */
 static const std::string generateHexWithReplacement(
-    std::independent_bits_engine<std::default_random_engine, CHAR_BIT, uint8_t>& ibe,
+    std::independent_bits_engine<std::default_random_engine, CHAR_BIT, unsigned long>& ibe,
     unsigned int numDigits,
     uint8_t replacementBits,
     unsigned short numReplacementBits) {
@@ -118,14 +119,14 @@ static const std::string generateHexWithReplacement(
  * @return A hex string of length @c numDigits.
  */
 static const std::string generateHex(
-    std::independent_bits_engine<std::default_random_engine, CHAR_BIT, uint8_t>& ibe,
+    std::independent_bits_engine<std::default_random_engine, CHAR_BIT, unsigned long>& ibe,
     unsigned int numDigits) {
     return generateHexWithReplacement(ibe, numDigits, 0, 0);
 }
 
 const std::string generateUUID() {
     static bool seeded = false;
-    static std::independent_bits_engine<std::default_random_engine, CHAR_BIT, uint8_t> ibe;
+    static std::independent_bits_engine<std::default_random_engine, CHAR_BIT, unsigned long> ibe;
     static std::mutex mutex;
     std::unique_lock<std::mutex> lock(mutex);
     if (!seeded) {

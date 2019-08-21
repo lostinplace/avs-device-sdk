@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_AVS_TEST_AVSCOMMON_AVS_ATTACHMENT_MOCKATTACHMENTMANAGER_H_
 
 #include <chrono>
-#include <string>
+#include <sstream>
+#include<string>
 #include <memory>
 
 #include <gmock/gmock.h>

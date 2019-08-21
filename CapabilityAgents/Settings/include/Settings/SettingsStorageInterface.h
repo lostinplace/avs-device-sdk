@@ -19,7 +19,8 @@
 #include <unordered_map>
 #include <memory>
 #include <fstream>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 namespace alexaClientSDK {

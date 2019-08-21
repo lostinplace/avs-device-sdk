@@ -21,7 +21,8 @@
 #include <iostream>
 #include <memory>
 #include <mutex>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include "AVSCommon/Utils/LibcurlUtils/CurlEasyHandleWrapper.h"
 #include "AVSCommon/Utils/LibcurlUtils/HttpPostInterface.h"

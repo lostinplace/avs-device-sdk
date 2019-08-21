@@ -21,7 +21,8 @@
 #include <iostream>
 #include <memory>
 #include <mutex>
-#include <string>
+#include <sstream>
+#include<string>
 #include <utility>
 
 extern "C" {

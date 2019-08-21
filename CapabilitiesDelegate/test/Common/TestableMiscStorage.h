@@ -16,7 +16,8 @@
 #ifndef ALEXA_CLIENT_SDK_CAPABILITIESDELEGATE_TEST_COMMON_TESTABLEMISCSTORAGE_H_
 #define ALEXA_CLIENT_SDK_CAPABILITIESDELEGATE_TEST_COMMON_TESTABLEMISCSTORAGE_H_
 
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_map>
 
 #include <AVSCommon/SDKInterfaces/Storage/MiscStorageInterface.h>

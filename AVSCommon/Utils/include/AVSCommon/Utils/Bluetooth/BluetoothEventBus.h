@@ -20,7 +20,8 @@
 #include <mutex>
 #include <unordered_map>
 #include <list>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include "AVSCommon/Utils/Bluetooth/BluetoothEvents.h"

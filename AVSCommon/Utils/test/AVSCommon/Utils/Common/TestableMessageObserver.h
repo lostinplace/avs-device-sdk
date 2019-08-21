@@ -18,7 +18,8 @@
 
 #include <condition_variable>
 #include <mutex>
-#include <string>
+#include <sstream>
+#include<string>
 #include <vector>
 
 #include <AVSCommon/SDKInterfaces/MessageObserverInterface.h>

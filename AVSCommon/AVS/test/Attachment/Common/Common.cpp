@@ -18,6 +18,7 @@
 #include <random>
 #include <climits>
 #include <algorithm>
+#include <stdint.h>
 
 namespace alexaClientSDK {
 namespace avsCommon {
@@ -35,8 +36,10 @@ std::unique_ptr<InProcessSDS> createSDS(int desiredSize) {
 
 std::vector<uint8_t> createTestPattern(int patternSize) {
     std::vector<uint8_t> vec(patternSize);
-    std::independent_bits_engine<std::default_random_engine, CHAR_BIT, uint8_t> engine;
-    std::generate(begin(vec), end(vec), std::ref(engine));
+    using engine = std::independent_bits_engine<std::default_random_engine, CHAR_BIT, unsigned long>;
+    std::random_device rd;
+    engine br(rd());
+    std::generate(begin(vec), end(vec), std::ref(br));
 
     return vec;
 }

@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_CERTIFIEDSENDER_INCLUDE_CERTIFIEDSENDER_MESSAGESTORAGEINTERFACE_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 #include <queue>
 
 namespace alexaClientSDK {

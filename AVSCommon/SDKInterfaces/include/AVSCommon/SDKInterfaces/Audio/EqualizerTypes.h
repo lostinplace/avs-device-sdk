@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_SDKINTERFACES_INCLUDE_AVSCOMMON_SDKINTERFACES_AUDIO_EQUALIZERTYPES_H_
 
 #include <array>
-#include <string>
+#include <sstream>
+#include<string>
 #include <unordered_map>
 
 #include <AVSCommon/Utils/functional/hash.h>

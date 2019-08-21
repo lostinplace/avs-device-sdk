@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_BLUETOOTHIMPLEMENTATIONS_BLUEZ_INCLUDE_BLUEZ_MANAGEDGVARIANT_H_
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <gio/gio.h>
 

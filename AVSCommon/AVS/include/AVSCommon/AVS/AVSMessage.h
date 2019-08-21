@@ -19,7 +19,9 @@
 #include "AVSMessageHeader.h"
 
 #include <memory>
-#include <string>
+#include <sstream>
+#include <sstream>
+#include<string>
 
 namespace alexaClientSDK {
 namespace avsCommon {

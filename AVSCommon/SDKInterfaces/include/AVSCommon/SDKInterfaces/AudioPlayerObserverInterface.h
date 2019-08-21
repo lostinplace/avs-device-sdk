@@ -17,7 +17,8 @@
 #define ALEXA_CLIENT_SDK_AVSCOMMON_SDKINTERFACES_INCLUDE_AVSCOMMON_SDKINTERFACES_AUDIOPLAYEROBSERVERINTERFACE_H_
 
 #include <chrono>
-#include <string>
+#include <sstream>
+#include<string>
 
 #include <AVSCommon/AVS/PlayerActivity.h>
 

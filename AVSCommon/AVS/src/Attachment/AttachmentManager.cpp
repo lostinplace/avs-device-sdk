@@ -99,7 +99,7 @@ AttachmentManager::AttachmentManagementDetails& AttachmentManager::getDetailsLoc
         switch (m_attachmentType) {
             // The in-process attachment type.
             case AttachmentType::IN_PROCESS:
-                details.attachment = make_unique<InProcessAttachment>(attachmentId);
+                details.attachment = alexaClientSDK::avsCommon::avs::attachment::make_unique<InProcessAttachment>(attachmentId);
                 break;
         }
 

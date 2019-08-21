@@ -19,7 +19,7 @@
 #include <chrono>
 #include <ctime>
 #include <string>
-#include <sys/time.h>
+#include <time.h>
 
 #include "AVSCommon/Utils/RetryTimer.h"
 #include "AVSCommon/Utils/Timing/SafeCTimeAccess.h"

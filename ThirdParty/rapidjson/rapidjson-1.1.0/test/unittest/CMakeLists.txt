@@ -57,11 +57,11 @@ elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
     endif()
 
     # Force to always compile with /WX
-    if(CMAKE_CXX_FLAGS MATCHES "/WX-")
-        string(REGEX REPLACE "/WX-" "/WX" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
-    else()
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /WX")
-    endif()
+ #   if(CMAKE_CXX_FLAGS MATCHES "/WX-")
+ #       string(REGEX REPLACE "/WX-" "/WX" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+ #   else()
+ #       set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /WX")
+ #   endif()
 endif()
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DRAPIDJSON_HAS_STDSTRING=1")

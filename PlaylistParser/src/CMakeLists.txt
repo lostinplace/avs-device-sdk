@@ -1,5 +1,5 @@
 find_package(PkgConfig)
-pkg_check_modules(CRYPTO REQUIRED libcrypto)
+find_package(OpenSSL REQUIRED)
 
 add_definitions("-DACSDK_LOG_MODULE=PlaylistParser")
 
@@ -20,7 +20,7 @@ target_include_directories(PlaylistParser PUBLIC
 
 target_link_libraries(PlaylistParser
     AVSCommon
-    "${CRYPTO_LDFLAGS}")
+    OpenSSL::SSL OpenSSL::Crypto)
 
 if (ENABLE_SAMPLE_AES)
     if (NOT FFMPEG_INCLUDE_DIR OR NOT FFMPEG_LIB_PATH)

@@ -14,6 +14,7 @@
  */
 
 #include "AIP/ESPData.h"
+#include <ctype.h>
 
 namespace alexaClientSDK {
 namespace capabilityAgents {
@@ -50,7 +51,7 @@ bool ESPData::verifyHelper(const std::string& valueToVerify) {
     if (!valueToVerify.empty()) {
         isValid = true;
         for (auto c : valueToVerify) {
-            if (!std::isalnum(c) && c != '.' && c != '-' && c != '+') {
+            if (!isalnum(c) && c != '.' && c != '-' && c != '+') {
                 isValid = false;
                 break;
             }

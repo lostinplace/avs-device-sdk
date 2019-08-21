@@ -1,0 +1,27 @@
+﻿{
+  "configurations": [
+    {
+      "name": "RELEASE",
+      "generator": "Ninja",
+      "configurationType": "RELEASE",
+      "inheritEnvironments": [
+        "msvc_x64_x64"
+      ],
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "DPKG_CONFIG_EXECUTABLE",
+          "value": "C:/pkgconfig/bin/pkg-config.exe"
+        },
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        }
+      ]
+    }
+  ]
+}

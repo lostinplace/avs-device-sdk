@@ -22,6 +22,14 @@
 #include <mutex>
 #include <limits>
 #include <cstring>
+#include <sys/types.h>
+
+
+#ifdef _WIN64
+#define ssize_t __int64
+#else
+#define ssize_t long
+#endif
 
 #include "AVSCommon/Utils/Logger/LoggerUtils.h"
 #include "SharedDataStream.h"

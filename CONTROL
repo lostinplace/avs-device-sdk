@@ -1,0 +1,4 @@
+Source: avs-device-sdk
+Version: 1.0
+Description: Library for integrating devices with Alexa Services
+Build-Depends: sqlite3, libcurl, openssl

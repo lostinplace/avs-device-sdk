@@ -15,9 +15,11 @@
 
 #include <iomanip>
 #include <sstream>
+#include <ctype.h>
 
 #include <AVSCommon/Utils/Logger/Logger.h>
 #include <AVSCommon/Utils/PlaylistParser/PlaylistParserObserverInterface.h>
+
 
 #include "PlaylistParser/M3UParser.h"
 #include "PlaylistParser/PlaylistUtils.h"
@@ -288,7 +290,7 @@ std::chrono::milliseconds parseRuntime(const std::string& line) {
     auto runner = EXTINF.length();
 
     // skip whitespace
-    while (runner < line.length() && std::isspace(line.at(runner))) {
+    while (runner < line.length() && isspace(line.at(runner))) {
         ++runner;
     }
     if (runner == line.length()) {
@@ -302,7 +304,7 @@ std::chrono::milliseconds parseRuntime(const std::string& line) {
     ++runner;
 
     // skip whitespace
-    while (runner < line.length() && std::isspace(line.at(runner))) {
+    while (runner < line.length() && isspace(line.at(runner))) {
         ++runner;
     }
     if (runner == line.length()) {

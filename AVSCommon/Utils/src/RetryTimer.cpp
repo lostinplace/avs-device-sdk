@@ -14,6 +14,7 @@
  */
 
 #include <random>
+#include <time.h>
 
 #include "AVSCommon/Utils/RetryTimer.h"
 
@@ -49,7 +50,7 @@ std::chrono::milliseconds RetryTimer::calculateTimeToRetry(int retryCount) const
         retryCount = m_RetrySize - 1;
     }
 
-    std::mt19937 generator(static_cast<unsigned>(std::time(nullptr)));
+    std::mt19937 generator(static_cast<unsigned>(time(nullptr)));
     std::uniform_int_distribution<int> distribution(
         (m_RetryTable[retryCount] * m_RetryDecreasePercentage) / 100,
         (m_RetryTable[retryCount] * m_RetryIncreasePercentage) / 100);

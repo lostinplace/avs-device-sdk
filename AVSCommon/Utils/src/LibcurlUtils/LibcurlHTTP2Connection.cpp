@@ -185,6 +185,8 @@ void LibcurlHTTP2Connection::processNextRequest() {
     }
 }
 
+#undef max
+
 void LibcurlHTTP2Connection::networkLoop() {
     ACSDK_DEBUG5(LX(__func__));
 
@@ -227,6 +229,7 @@ void LibcurlHTTP2Connection::networkLoop() {
             processNextRequest();
 
             auto before = std::chrono::time_point<std::chrono::steady_clock>::max();
+
             auto multiWaitTimeout = WAIT_FOR_ACTIVITY_TIMEOUT;
             bool paused = areStreamsPaused();
             if (paused) {

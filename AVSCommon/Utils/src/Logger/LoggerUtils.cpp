@@ -16,6 +16,7 @@
 #include <cstdio>
 #include <iomanip>
 #include <iostream>
+#include <ctype.h>
 
 #include "AVSCommon/Utils/Logger/LoggerUtils.h"
 #include "AVSCommon/Utils/Logger/Logger.h"
@@ -121,7 +122,7 @@ void dumpBytesToStream(std::ostream& stream, const char* prefix, size_t width, c
         // Output bytes as visible characters.
         for (size_t iy = ix; iy < byteLimit; iy++) {
             auto ch = data[iy];
-            if (std::isprint(ch)) {
+            if (isprint(ch)) {
                 stream << ch;
             } else {
                 stream << '.';

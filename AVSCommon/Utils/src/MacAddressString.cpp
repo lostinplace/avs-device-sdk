@@ -17,6 +17,7 @@
 
 #include <memory>
 #include <string>
+#include <ctype.h>
 
 namespace alexaClientSDK {
 namespace avsCommon {
@@ -30,13 +31,13 @@ std::unique_ptr<MacAddressString> MacAddressString::create(const std::string& ma
     for (const auto& c : macAddress) {
         switch (parseState) {
             case State::FIRST_OCTET_BYTE:
-                if (!std::isxdigit(c)) {
+                if (!isxdigit(c)) {
                     return nullptr;
                 }
                 parseState = State::SECOND_OCTET_BYTE;
                 break;
             case State::SECOND_OCTET_BYTE:
-                if (!std::isxdigit(c)) {
+                if (!isxdigit(c)) {
                     return nullptr;
                 }
                 parseState = State::DIVIDER;

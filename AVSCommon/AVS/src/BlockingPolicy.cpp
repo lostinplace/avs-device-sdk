@@ -45,8 +45,8 @@ static const std::string TAG("BlockingPolicy");
  */
 #define LX(event) alexaClientSDK::avsCommon::utils::logger::LogEntry(TAG, event)
 
-const BlockingPolicy::Mediums BlockingPolicy::MEDIUM_AUDIO{MEDIUM_FLAG_AUDIO};
-const BlockingPolicy::Mediums BlockingPolicy::MEDIUM_VISUAL{MEDIUM_FLAG_VISUAL};
+const BlockingPolicy::Mediums BlockingPolicy::MEDIUM_AUDIO{static_cast<unsigned long int>(MEDIUM_FLAG_AUDIO)};
+const BlockingPolicy::Mediums BlockingPolicy::MEDIUM_VISUAL{static_cast<unsigned long int>(MEDIUM_FLAG_VISUAL)};
 const BlockingPolicy::Mediums BlockingPolicy::MEDIUMS_AUDIO_AND_VISUAL{MEDIUM_FLAG_AUDIO | MEDIUM_FLAG_VISUAL};
 const BlockingPolicy::Mediums BlockingPolicy::MEDIUMS_NONE{};
 

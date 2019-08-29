@@ -3,11 +3,11 @@
     {
       "name": "RELEASE",
       "generator": "Ninja",
-      "configurationType": "RELEASE",
+      "configurationType": "Release",
       "inheritEnvironments": [ "msvc_x64_x64" ],
       "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
       "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
-      "cmakeCommandArgs": "",
+      "cmakeCommandArgs": "--debug-output --trace",
       "buildCommandArgs": "-v",
       "ctestCommandArgs": "",
       "variables": [
@@ -17,16 +17,18 @@
           "type": "STRING"
         },
         {
-          "name": "CMAKE_TOOLCHAIN_FILE",
-          "value": "C:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+          "name": "RAPIDJSON_HAS_STDSTRING",
+          "value": "1",
           "type": "STRING"
         },
         {
-          "name": "RAPIDJSON_HAS_STDSTRING",
-          "value": "1"
-        },
-       
-      ]
+          "name": "VCPKG_TARGET_TRIPLET",
+          "value": "x64-windows",
+          "type": "STRING"
+        }
+      ],
+      "cmakeToolchain": "C:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "intelliSenseMode": "windows-msvc-x64"
     }
   ]
 }

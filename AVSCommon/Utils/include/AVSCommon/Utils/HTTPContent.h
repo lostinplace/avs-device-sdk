@@ -20,7 +20,7 @@
 #include <future>
 #include <memory>
 #include <sstream>
-#include<string>
+#include <string>
 
 #include <AVSCommon/AVS/Attachment/InProcessAttachment.h>
 

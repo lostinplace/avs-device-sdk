@@ -17,7 +17,7 @@
 
 #include <memory>
 
-#include <AVSCommon/SDKInterfaces/Audio/EqualizerStorageInterfaceTest.h>
+#include "AVSCommon/SDKInterfaces/Audio/EqualizerStorageInterfaceTest.h"
 
 namespace alexaClientSDK {
 namespace avsCommon {

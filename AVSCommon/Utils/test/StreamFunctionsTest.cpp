@@ -75,7 +75,7 @@ TEST_F(StreamFunctionsTest, test_dataContainsUnprintableChars) {
  * Verify that empty datasets work
  */
 TEST_F(StreamFunctionsTest, test_emptyVector) {
-    const unsigned char empty[] = {};
+    const unsigned char empty = new unsigned char[0];
     auto stream = stream::streamFromData(empty, sizeof(empty));
     ASSERT_TRUE(streamAndDataAreEqual(*stream, empty, sizeof(empty)));
 }

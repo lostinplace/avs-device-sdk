@@ -69,9 +69,13 @@ if(BUILD_TESTING)
     # file(GLOB_RECURSE testSourceFiles RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "*Test.cpp")
     foreach (testSourceFile IN LISTS testSourceFiles)
         get_filename_component(testName ${testSourceFile} NAME_WE)
-        add_executable(${testName} ${testSourceFile})
+        find_package(GTest MODULE REQUIRED)
+        target_link_libraries(${testName} PRIVATE GTest::GTest GTest::Main)
+        
         target_include_directories(${testName} PUBLIC "${INCLUDE_PATH}")
         target_link_libraries(${testName} "${LINK_PATH}")
+        message("111111111111111111111111111111111111111111111111111111111")
+        add_executable(${testName} ${testSourceFile})
         add_test(NAME ${testName}
             COMMAND ${testName} ${SDK_CONFIG_FILE_TARGET} ${INTEGRATION_INPUTS}
             CONFIGURATIONS Integration)
@@ -89,9 +93,13 @@ if(BUILD_TESTING)
         set(networkTestSourceFile
             "${CMAKE_CURRENT_SOURCE_DIR}/NetworkIntegrationTests.cpp")
         get_filename_component(networkTestName ${networkTestSourceFile} NAME_WE)
-        add_executable(${networkTestName} ${networkTestSourceFile})
+        find_package(GTest MODULE REQUIRED)
+        target_link_libraries(${networkTestName} PRIVATE GTest::GTest GTest::Main)
+        
         target_include_directories(${networkTestName} PUBLIC "${INCLUDE_PATH}")
         target_link_libraries(${networkTestName} "${LINK_PATH}")
+        message("2222222222222222222222222222222222222222222222222222222222222")
+        add_executable(${networkTestName} ${networkTestSourceFile})
         add_custom_target(networkIntegration
                 COMMAND NetworkIntegrationTests "${SDK_CONFIG_FILE_TARGET}" "${NETWORK_INTERFACE}")
     else()

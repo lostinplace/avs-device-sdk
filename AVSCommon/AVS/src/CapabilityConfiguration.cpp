@@ -13,7 +13,7 @@
  * permissions and limitations under the License.
  */
 
-#include "AVSCommon/AVS/CapabilityConfiguration.h"
+#include <AVSCommon/AVS/CapabilityConfiguration.h>
 
 #include <algorithm>
 #include <utility>

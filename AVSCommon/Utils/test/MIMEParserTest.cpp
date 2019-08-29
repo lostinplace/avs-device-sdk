@@ -205,7 +205,7 @@ TEST_F(MIMEParserTest, test_encodingSanity) {
 
     /// characters array to store the output, size chosen to be more than
     /// the size calculated above
-    char buf[encodedPayload.size() * 2];
+    char buf = new char[encodedPayload.size() * 2];
     size_t index{0};
     size_t lastSize{bufferSize};
     HTTP2SendDataResult result{0};

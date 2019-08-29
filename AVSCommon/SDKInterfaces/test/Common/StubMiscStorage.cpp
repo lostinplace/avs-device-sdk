@@ -15,7 +15,7 @@
 
 #include <gtest/gtest.h>
 
-#include <AVSCommon/SDKInterfaces/Storage/StubMiscStorage.h>
+#include "AVSCommon/SDKInterfaces/Storage/StubMiscStorage.h"
 
 namespace alexaClientSDK {
 namespace avsCommon {

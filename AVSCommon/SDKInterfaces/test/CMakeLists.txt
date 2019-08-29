@@ -1,14 +1,11 @@
-add_library(SDKInterfacesTests
-        src/EqualizerStorageInterfaceTest.cpp
-        src/StubMiscStorage.cpp
-        )
+add_subdirectory("Common")
 
-enable_testing()
-find_package(GTest MODULE REQUIRED)
+set(INCLUDE_PATH
+	"${AVSCommon_INCLUDE_DIRS}"
+  "${AVSCommon_SOURCE_DIR}/AVS/include"
+  "${AVSCommon_SOURCE_DIR}/Utils/include"
+	"${AVSCommon_SOURCE_DIR}/SDKInterfaces/include"
+  "${AVSCommon_SOURCE_DIR}/SDKInterfaces/test"
+)
 
-target_include_directories(SDKInterfacesTests PUBLIC ${AVSCommon_INCLUDE_DIRS})
-
-target_link_libraries(SDKInterfacesTests ${AVSCommon_LIBRARIES})
-target_link_libraries(SDKInterfacesTests PRIVATE GTest::GTest GTest::Main)
-add_test(AllTestsInMain main)
-
+discover_unit_tests("${INCLUDE_PATH}" "AVSCommon;SDKInterfacesCommonTestLib")

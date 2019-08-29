@@ -92,6 +92,7 @@ target_include_directories(AVSCommon PUBLIC
 
 find_package(RapidJSON CONFIG REQUIRED)
 target_link_libraries(AVSCommon ${CURL_LIBRARIES})
+set_target_properties(AVSCommon PROPERTIES ENABLE_EXPORTS True)
 
 # install target
 LIST(APPEND PATHS "${PROJECT_SOURCE_DIR}/AVS/include")

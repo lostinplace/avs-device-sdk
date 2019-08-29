@@ -12,7 +12,8 @@ endif()
 
 macro(discover_unit_tests includes libraries)
     # This will result in some errors not finding GTest when running cmake, but allows us to better integrate with CTest
-    find_package(GTest ${GTEST_PACKAGE_CONFIG})
+    find_package(GTest MODULE REQUIRED)
+    
     if(BUILD_TESTING)
         set (extra_macro_args ${ARGN})
         LIST(LENGTH extra_macro_args num_extra_args)
@@ -24,18 +25,33 @@ macro(discover_unit_tests includes libraries)
         find_package(GTest MODULE REQUIRED)
     
     add_test(AllTestsInMain main)
-        foreach(testsourcefile IN LISTS tests)
-            get_filename_component(testname ${testsourcefile} NAME_WE)
-            add_executable(${testname} ${testsourcefile})
-            add_dependencies(unit ${testname})
-            target_include_directories(${testname} PRIVATE ${includes})
+    foreach(testsourcefile IN LISTS tests)
+        get_filename_component(testname ${testsourcefile} NAME_WE)
+        
+        message("3333xxx")
+        
+        
+        enable_testing()
+        include(GoogleTest)
+        find_package(GTest MODULE REQUIRED)
+        
+        
+        add_executable(${testname} ${testsourcefile})
+        target_link_libraries(${testname} GTest::GTest)
+        target_link_libraries(${testname} AVSCommon)
+        message("4444xxx")
+        add_dependencies(unit ${testname})
+        
+        target_include_directories(${testname} PRIVATE ${includes})
+        gtest_discover_tests(${testname})
+        
             
-            # Do not include gtest_main due to double free issue
-            # - https://github.com/google/googletest/issues/930
-            target_link_libraries(${testname} PRIVATE GTest::GTest GTest::Main)
-            configure_test_command(${testname} "${inputs}" ${testsourcefile})
-            add_test(AllTestsInMain main)
-        endforeach()
+        # Do not include gtest_main due to double free issue
+        # - https://github.com/google/googletest/issues/930
+        
+        # configure_test_command(${testname} "${inputs}" ${testsourcefile})
+        
+    endforeach()
     endif()
 endmacro()
 
@@ -44,14 +60,18 @@ macro(configure_test_command testname inputs testsourcefile)
         if(${CMAKE_VERSION} VERSION_LESS "3.9.6")
             GTEST_ADD_TESTS(${testname} "${inputs}" ${testsourcefile})
         else()
-            GTEST_ADD_TESTS(TARGET ${testname} SOURCES ${testsourcefile} EXTRA_ARGS "${inputs}" TEST_LIST testlist)
-            foreach(test IN LISTS testlist)
-                if(${test} MATCHES "testSlow_")
-                    set_tests_properties(${test} PROPERTIES LABELS "slowtest")
-                elseif(${test} MATCHES "testTimer_")
-                    set_tests_properties(${test} PROPERTIES LABELS "timertest")
-                endif()
-            endforeach()
+            #enable_testing()
+            #find_package(GTest MODULE REQUIRED)
+            #target_link_libraries(main PRIVATE GTest::GTest GTest::Main)
+            #add_test(AllTestsInMain main)
+            #GTEST_ADD_TESTS(TARGET ${testname} SOURCES ${testsourcefile} EXTRA_ARGS "${inputs}" TEST_LIST testlist)
+            #foreach(test IN LISTS testlist)
+            #    if(${test} MATCHES "testSlow_")
+            #        set_tests_properties(${test} PROPERTIES LABELS "slowtest")
+            #    elseif(${test} MATCHES "testTimer_")
+            #        set_tests_properties(${test} PROPERTIES LABELS "timertest")
+            #    endif()
+            #endforeach()
         endif()
     elseif(ANDROID_TEST_AVAILABLE)
         # Use generator expression to get the test path when available.

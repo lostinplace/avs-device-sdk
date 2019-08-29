@@ -22,7 +22,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-#include <AVSCommon/SDKInterfaces/Storage/MiscStorageInterface.h>
+#include "AVSCommon/SDKInterfaces/Storage/MiscStorageInterface.h"
 
 namespace alexaClientSDK {
 namespace avsCommon {
